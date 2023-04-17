@@ -1,0 +1,36 @@
+.missions {
+    margin: 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    user-select: none;
+    .allMissions {
+        width: 1500px;
+        padding-bottom: 20px;
+        thead {
+            text-align: left;
+        }
+        td, th {
+            user-select: text;  
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        tr {
+            &:nth-child(even) {
+                background-color: rgb(241, 241, 241);
+            }
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #66caff;
+            color: white;
+        }
+    }
+}

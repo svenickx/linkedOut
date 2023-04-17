@@ -1,0 +1,34 @@
+.btn {
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #66caff;
+    border: solid 1px #66caff;
+    background-color: white;
+}
+.primary {
+    border: solid 1px #66caff;
+    background-color: #66caff;
+    color: white;
+    &:hover {
+      background-color: #0275B4;
+    }
+    &__red {
+      background-color: #ff5656;
+      color: white;
+      &:hover {
+        background-color: #bb3c3c;
+      }
+    }
+}
+.small {
+  padding: 5px 10px;
+}
+.disabled {
+  background-color: lightgrey;
+  &:hover {
+      background-color: #c07070;
+  }
+}

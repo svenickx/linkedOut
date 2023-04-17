@@ -1,0 +1,25 @@
+.wrapper {
+    .freelanceChoice {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        text-align: center;
+        div {
+            border: solid 1px black;
+            padding: 10px;
+            cursor: pointer;
+            &:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+            &:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+            p {
+                user-select: none;
+            }
+        }
+        .chosen {
+            background-color: #66caff;
+        }
+    }
+}

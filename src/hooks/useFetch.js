@@ -2,40 +2,36 @@ import { useState } from "react";
 
 const useFetch = ({ url, method, body, token }) => {
   const [data, setData] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const fetchData = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch(`${process.env.API_URL}${url}`, {
-        headers: {
-          "Content-Type": "Application/json",
-          ...(token && {
-            authorization: token,
-          }),
-        },
-        method: method,
-        ...(body && {
-          body: JSON.stringify(body),
+    setIsLoading(true);
+    const options = {
+      headers: {
+        "Content-Type": "Application/json",
+        ...(token && {
+          authorization: token,
         }),
-      });
+      },
+      method: method,
+      ...(body && {
+        body: JSON.stringify(body),
+      }),
+    };
+    try {
+      const response = await fetch(`${url}`, options);
       const dataJson = await response.json();
-      if (!dataJson.success) {
-        throw new Error(dataJson.message);
-      }
       setData(dataJson);
     } catch (error) {
       console.error(error);
       setError(error);
     } finally {
-      setTimeout(() => {
-        setLoading(false);
-      }, 1000);
+      setIsLoading(false);
     }
   };
 
-  return { fetchData, data, error, loading };
+  return { fetchData, data, error, isLoading };
 };
 
 export default useFetch;

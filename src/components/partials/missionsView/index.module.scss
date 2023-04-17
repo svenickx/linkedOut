@@ -1,0 +1,33 @@
+.missions {
+    .container {
+        padding: 5px;
+        border: solid 1px black;
+        border-radius: 5px;
+        max-height: 300px;
+        overflow-y: auto;
+        .mission {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            padding: 5px 0;
+            .title {
+                font-weight: bold;
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            .color {
+                color: #66caff;
+                &:hover {
+                    color: #0275B4;
+                }
+            }
+        }
+    }
+}

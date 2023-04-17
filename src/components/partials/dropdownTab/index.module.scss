@@ -1,0 +1,50 @@
+.dropdownTab {
+    .title {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        h3 {
+            font-size: 1.7rem;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            height: 20px;
+            width: 1px;
+            background-color: black;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            height: 20px;
+            width: 1px;
+            background-color: black;
+        }
+    }
+    .open {
+        &:before {
+            transform: rotate(30deg) translate(0, -50%);
+        }
+        &:after {
+            transform: rotate(-30deg) translate(0, -50%);
+        }
+    }
+    .close {
+        &:before {
+            transform: rotate(150deg) translate(-9px, 14%);
+        }
+        &:after {
+            transform: rotate(-150deg) translate(7px, 20%);
+        }
+    }
+    .tab {
+        overflow: auto;
+        margin: 10px;
+    }
+}

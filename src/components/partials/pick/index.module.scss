@@ -1,0 +1,19 @@
+.pickWrapper {
+    max-height: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 10px;
+        cursor: pointer;
+        &:hover {
+            background-color: #66caff;
+        }
+    }
+    .pickChosen {
+        background-color: #66caff;
+    }
+}

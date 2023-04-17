@@ -1,0 +1,64 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    z-index: 99;
+    .logo {
+        width: 140px;
+        img {
+            width: 100%;
+        }
+    }
+    .buttons {
+        height: 100%;
+        display: flex;
+        a {
+            padding: 0 12px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background-color: #F2F2F2;
+            }
+        }
+    }
+    .auth {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .userInfo {
+            display: flex;
+        }
+        p {
+            color: black;
+        }
+        .userInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                text-align: center;
+            }
+        }
+        .actionBtn {
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: #66caff;
+            p {
+                color: white;
+            }
+            &:hover {
+                background-color: #0275B4;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.range {
+    display: flex;
+    flex-direction: column;
+    label {
+        text-align: center;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}

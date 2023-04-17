@@ -1,0 +1,42 @@
+.filter {
+    width: 100%;
+    padding: 20px;
+    border: solid 1px black;
+    .title {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 20px 0 40px;
+        & > div {
+            margin: 20px 0;
+        }
+        .multiselect {
+            width: 250px;
+            p {
+                text-align: center;
+            }
+        }
+        .rangeContainer {
+            border: solid 1px black;
+            width: 250px;
+            border-radius: 10px;
+            height: fit-content;
+            div {
+                padding: 10px;
+            }
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

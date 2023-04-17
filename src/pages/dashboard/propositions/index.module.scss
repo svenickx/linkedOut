@@ -1,0 +1,32 @@
+.propositions {
+    margin: 60px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    user-select: none;
+    h3 {
+        font-size: 1.7rem;
+    }
+    
+}
+.open {
+    &:before {
+        transform: rotate(30deg) translate(0, -50%);
+    }
+    &:after {
+        transform: rotate(-30deg) translate(0, -50%);
+    }
+}
+.close {
+    &:before {
+        transform: rotate(150deg) translate(-9px, 14%);
+    }
+    &:after {
+        transform: rotate(-150deg) translate(7px, 20%);
+    }
+}
+.tab {
+    overflow: auto;
+    margin: 10px;
+}

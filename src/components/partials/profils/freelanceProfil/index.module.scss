@@ -1,0 +1,145 @@
+
+.profilDescription {
+    width: 100%;
+    display: flex;
+    background-color: #F3F4F6;
+    .left {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        .container {
+            border: solid 1px rgb(231, 231, 231);
+            border-radius: 20px;
+            background-color: white;
+            padding: 30px 30px 20px 30px;
+            margin: 20px 0 20px 40px;
+            width: 100%;
+            p {
+                padding: 10px 0;
+            }
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        h5 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+        }
+        .job {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 1.8rem;
+            }
+            span {
+                background-color: #F3F4F6;
+                font-size: 0.8rem;
+                padding: 2px 10px;
+                margin: 0 0 0 10px;
+                border-radius: 10px;
+            }
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px 0 15px;
+            span {
+                background-color: #F3F4F6;
+                font-size: 1rem;
+                padding: 2px 10px;
+                margin: 0 0 0 10px;
+                border-radius: 10px;
+            }
+
+        }
+    }
+    .right {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 20px 0;
+        .recap {
+            padding: 20px;
+            border: solid 1px rgb(231, 231, 231);
+            border-radius: 20px;
+            background-color: white;
+            width: 75%;
+            margin: 20px;
+            h3 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            .availabilities {
+                padding: 0 30px;
+                p {
+                    padding: 6px 0;
+                    position: relative;
+                }
+                .dot {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        left: -25px;
+                        height: 15px;
+                        width: 15px;
+                        background-color: rgb(0, 224, 0);
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .smallProfil {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div:first-of-type {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .img {
+                        width: 100px;
+                        height: 100px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .name {
+                        padding: 0 10px;
+                        p {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                h4 {
+                    margin: 25px 0;
+                    font-size: 1.5rem;
+                    font-weight: unset;
+                }
+            }
+        }
+        .dark {
+            background-color: #10244D;
+        }
+    }
+}
+.green {
+    color: #20D5A4;
+}
+.sidePadding {
+    padding: 0 7px;
+}                
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin: 20px 0;
+}

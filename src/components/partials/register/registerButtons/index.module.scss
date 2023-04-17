@@ -1,0 +1,11 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+    div {
+        border: solid 1px black;
+        padding: 10px;
+        user-select: none;
+        cursor: pointer;
+    }
+}

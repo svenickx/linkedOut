@@ -1,0 +1,62 @@
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 25px 25px 0;
+        a {
+            width: 140px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    form {
+        width: 400px;
+        max-width: 100%;
+        height: 70vmin;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        h2 {
+            font-size: 2.7rem;
+        }
+        .loginRedirect {
+            display: flex;
+            p {
+                margin-right: 5px;
+            }
+            a {
+                color: #0275B4;
+                text-decoration: underline;
+                font-weight: bold;
+                &:hover {
+                    color: #66caff;
+                }
+            }
+        }
+        .resetPassword {
+            color: #0275B4;
+            font-weight: bold;
+            &:hover {
+                color: #66caff;
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: 60px;
+        background-color: yellow;
+    }
+}
+.error {
+    color: red;
+}

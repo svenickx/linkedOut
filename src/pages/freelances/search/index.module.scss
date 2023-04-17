@@ -1,0 +1,18 @@
+.search {
+    width: 100vw;
+    margin: 60px 0;
+    .searchWrapper {
+        padding: 40px 0 50px 0;
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        background-image: url("/search_background.jpg");
+        background-position: center;
+        & > div:first-child {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+        }
+    }
+}
